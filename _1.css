@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f7f9fb;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .dataTables_wrapper .dt-buttons {
+    margin-bottom: 10px;
+  }
+
+  #studiesTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+
+  #studiesTable thead {
+    background-color: #e8f1f7;
+  }
+
+  #studiesTable thead th {
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+  }
+
+  #studiesTable td {
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+
+  .top-buttons {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .download-btn {
+    background-color: #d7f1f7;
+    border: 1px solid #a0d3df;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .filter-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+    font-size: 0.9em;
+  }
+
+  .section-header {
+    background: #e0f1f8;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 10px;
+  }
+
+  .datatable-section {
+    border: 1px solid #c4dbe3;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+  }

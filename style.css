@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f4f7;
+  }
+  
+  .header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    height: 28px;
+  }
+  
+  .tabs {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .tab {
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .tab:hover {
+    background-color: #F6EDD5;
+    color: #003366;
+    text-decoration: underline;
+  }
+  
+  .tab.active {
+    background-color: white;
+    color: #1a1a1a;
+  }
+  
+  .partner-logo {
+    height: 24px;
+    background: white;
+    padding: 2px;
+    border-radius: 2px;
+  }
+  
+  .partner-logo.nih {
+    height: 30px;
+  }
+  
+  .color-bars {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bar.teal {
+    height: 5px;
+    background-color: #2ca6a4;
+  }
+  
+  .bar.light-grey {
+    height: 5px;
+    background-color: #cccccc;
+  }
+  
+  .container {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .filters {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .filter-row {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  select, input {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Data Table Layout styling */
+  .dataTables_length {
+    margin-right: 1rem;
+  }
+
+  .custom-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .toolbar-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  /* Style the Rows per page dropdown */
+  .dataTables_length {
+    margin: 0;
+  }
+  
+  /* Style the Column Visibility button */
+  .dt-button.buttons-colvis {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .dt-button.buttons-colvis:hover {
+    background-color: #0056b3;
+  }
+  
+  /* plot styling */
+  .chart-container {
+    display: flex;
+    gap: 20px; /* spacing between the charts */
+    justify-content: center;
+    flex-wrap: wrap; /* optional for responsiveness */
+  }
+
+  .scatter-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* enables horizontal scroll if needed */
+    padding-bottom: 10px;
+  }
+
+  .chart-box {
+    height: 400px;
+  }
+
+  .bar-chart {
+    width: 600px;
+  }
+  
+  .scatter-chart {
+    width: 450px;
+    flex-shrink: 0; /* prevent squeezing in flex row */
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+  }

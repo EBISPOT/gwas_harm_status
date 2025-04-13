@@ -12,21 +12,22 @@
 <body>
 
   <div class="header">
-    <div class="logo-title">
-      <img src="https://www.ebi.ac.uk/gwas/images/gwas-logo.png" alt="GWAS Logo" class="logo">
-      <span>GWAS Catalog</span>
+      <div class="logo-title">
+        <img src="./static/GWAS_catalog_icon.png" alt="GWAS Logo" class="logo">
+        <span>GWAS Catalog</span>
+      </div>
+      <div class="tabs">
+        <a class="tab active" href="table.html">Table (harmonisation status)</a>
+        <a class="tab" id="summary-plot" href="./plot_page/plot.html" target="_blank">Summary Plot</a>
+        <img src="./static/EBI_icon.png" alt="EMBL-EBI" class="partner-logo">
+        <img src="./static/NIH.png" alt="NIH" class="partner-logo nih">
+      </div>
     </div>
-    <div class="tabs">
-      <a class="tab active">Table (harmonisation status )</a>
-      <a class="tab" id="summary-plot" href="plot.html" target="_blank">Summary Plot</a>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/EMBL-EBI_logo.svg" alt="EMBL-EBI" class="partner-logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/NIH_Master_Logo_Vertical_2Color.png/600px-NIH_Master_Logo_Vertical_2Color.png" alt="NIH" class="partner-logo nih">
+    <div class="color-bars">
+      <div class="bar teal"></div>
+      <div class="bar light-grey"></div>
     </div>
-  </div>
-  <div class="color-bars">
-    <div class="bar teal"></div>
-    <div class="bar light-grey"></div>
-  </div>
+      
 
   <div class="container">
     <h1>GWAS Catalog Summary Statistic Harmonisation Status</h1>

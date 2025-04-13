@@ -1,3 +1,5 @@
+const apiBase = 'https://harm-status-api.onrender.com';
+
 document.addEventListener('DOMContentLoaded', () => {
     let COLORS = {
       harmonised: '#00b894',
@@ -73,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBarChart({
       elementId: 'statusChart',
       errorId: 'statusChart_error',
-      apiUrl: 'http://127.0.0.1:8000/plotly/status_bar',
+      apiUrl: `${apiBase}/plotly/status_bar`,
       titleText: 'Current Harmonisation Status',
       categoryKey: 'Harm_status',
       valueKey: 'num_unique_studies',
@@ -84,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBarChart({
         elementId: 'harmChart',
         errorId: 'harmChart_error',
-        apiUrl: 'http://127.0.0.1:8000/plotly/harmed_six_month',
+        apiUrl: `${apiBase}/plotly/harmed_six_month`,
         titleText: 'Newly Harmonised Sumstats (Recent 6 months)',
         categoryKey: 'month',
         valueKey: 'num_studies',
@@ -167,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadScatterPlot({
     elementId: 'scatter_array',
     errorId: 'scatter_array_error',
-    apiUrl: 'http://127.0.0.1:8000/plotly/drop_rate/array',
+    apiUrl: `${apiBase}/plotly/drop_rate/array`,
     titleText: 'Drop Rate - Array Studies',
     threshold : 0.15
   });
@@ -175,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadScatterPlot({
     elementId: 'scatter_seq',
     errorId: 'scatter_seq_error',
-    apiUrl: 'http://127.0.0.1:8000/plotly/drop_rate/sequencing',
+    apiUrl: `${apiBase}/plotly/drop_rate/sequencing`,
     titleText: 'Drop Rate - Sequencing Studies',
     threshold : 0.2
   });
@@ -183,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadScatterPlot({
     elementId: 'scatter_mix',
     errorId: 'scatter_mix_error',
-    apiUrl: 'http://127.0.0.1:8000/plotly/drop_rate/mix',
+    apiUrl: `${apiBase}/plotly/drop_rate/mix`,
     titleText: 'Drop Rate - Mixed Studies'
   });
   

@@ -1,4 +1,4 @@
-const apiBase = 'http://127.0.0.1:8000';
+const apiBase = 'https://harm-status-api.onrender.com';
 let dataTable;
 let defaultVisibleColumns = [
   'Study', 'PMID', 'Genotyping_type', 'Effect_size_type',

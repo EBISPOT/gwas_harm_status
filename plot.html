@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <title>Summary Plot Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-title">
+    <img src="https://www.ebi.ac.uk/gwas/images/gwas-logo.png" alt="GWAS Logo" class="logo">
+    <span>GWAS Catalog</span>
+  </div>
+  <div class="tabs">
+    <a class="tab", id="summary-table", href="Main_page.html">Table (harmonisation status )</a>
+    <a class="tab active">Summary Plot</a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/EMBL-EBI_logo.svg" alt="EMBL-EBI" class="partner-logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/NIH_Master_Logo_Vertical_2Color.png/600px-NIH_Master_Logo_Vertical_2Color.png" alt="NIH" class="partner-logo nih">
+  </div>
+</div>
+<div class="color-bars">
+  <div class="bar teal"></div>
+  <div class="bar light-grey"></div>
+</div>
+
+<div class="chart-container">
+    <div>
+      <div id="statusChart" class="chart-box bar-chart"></div>
+      <div id="statusChart_error" class="error"></div>
+    </div>
+    <div>
+      <div id="harmChart" class="chart-box bar-chart"></div>
+      <div id="harmChart_error" class="error"></div>
+    </div>
+  </div>
+
+<div class="scatter-container">
+    <div>
+      <div id="scatter_array" class="chart-box scatter-chart"></div>
+      <div id="scatter_array_error" class="error"></div>
+    </div>
+    <div>
+      <div id="scatter_seq" class="chart-box scatter-chart"></div>
+      <div id="scatter_seq_error" class="error"></div>
+    </div>
+    <div>
+      <div id="scatter_mix" class="chart-box scatter-chart"></div>
+      <div id="scatter_mix_error" class="error"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
+<script src="plot.js"></script>
+</body>
+</html>

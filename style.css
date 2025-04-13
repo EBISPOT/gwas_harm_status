@@ -35,11 +35,26 @@
   }
   
   .tab {
+    padding: 10px 15px;
+    margin: 0 5px;
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
     cursor: pointer;
+  }
+
+  .tab:hover {
+    background-color: #F6EDD5;
+    color: #003366;
+    text-decoration: underline;
+  }
+  
+  .tab.active {
+    background-color: white;
+    color: #1a1a1a;
   }
   
   .partner-logo {
@@ -151,4 +166,37 @@
   
   .dt-button.buttons-colvis:hover {
     background-color: #0056b3;
+  }
+  
+  /* plot styling */
+  .chart-container {
+    display: flex;
+    gap: 20px; /* spacing between the charts */
+    justify-content: center;
+    flex-wrap: wrap; /* optional for responsiveness */
+  }
+
+  .scatter-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* enables horizontal scroll if needed */
+    padding-bottom: 10px;
+  }
+
+  .chart-box {
+    height: 400px;
+  }
+
+  .bar-chart {
+    width: 600px;
+  }
+  
+  .scatter-chart {
+    width: 450px;
+    flex-shrink: 0; /* prevent squeezing in flex row */
+  }
+
+  .error {
+    color: red;
+    text-align: center;
   }
